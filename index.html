@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>abd7 site</title>
-
-    
     <style>
-        
+        @font-face {
+            font-family: 'Source Code Pro';
+            src: url('./fonts/SourceCodePro-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
 
-        
         body {
             font-family: 'Source Code Pro', monospace;
             background-color: black;
             color: white;
             margin: 0;
             padding: 20px;
-            margin-left: 10px,
         }
+
         .headContainer {
             display: flex;
             flex-direction: column;
@@ -25,49 +27,47 @@
             border: 1px solid white;
             margin-top: 10px;
             padding: 10px 10px 10px 5px;
-            width: 420px
+            width: 420px;
+        }
 
+        .mainContainer {
+            display: flex;
+            margin-top: 10px;
         }
 
         .bodyContainer {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
             border: 1px solid white;
-            margin-top: 10px;
             padding: 10px 10px 10px 5px;
-            width: 500px
-
+            width: 48%;
+            margin-right: 2%;
         }
 
-      
-
         .bodyImages img {
-           
             width: 200px;
             position: absolute;
             top: 25px;
             right: 20px;
-          
-            height: auto;
-           
+            height: 150px;
+        }
 
-}
         .links {
             margin: 10px 0;
         }
+
         .links a {
             color: white;
             text-decoration: none;
             margin-right: 10px;
-            
         }
+
         .heading {
             margin: 20px 0 10px;
         }
+
         .social-icons {
             margin-left: 10px;
         }
+
         .social-icons img {
             width: 24px;
             height: 15px;
@@ -76,9 +76,8 @@
 
         .content {
             line-height: 120%;
-            
-
         }
+
         br {
             content: "";
             display: block;
@@ -103,29 +102,39 @@
                 </a>
             </span>
         </div>
+    </div>
+    <div class="mainContainer">
+        <div class="bodyContainer">
+            <h2 class="heading">me</h2>
+            <p class="content">
+                welcome welcome! <br>
+                I like abstract design hence the boxes, I like simplicity hence the black and white.<br>
+                I'm interested in a lot of stuff Islam, building, investing (in people), absolutely demolishing my body (see me puke after a leg day), physics, math, art (i love my sister's paintings), Nusrat Fateh Ali Khan, Iqbal, sound tracks (hans zimmer), kendrick, water, podcasts, cycling. <br>
+                The year is 2024 and I am grateful to be alive. I will be growing a lot and this is a place to capture it. <br>
+                If you have anything you'd like to share with me that i may find interesting shoot me a dm. <br>
+                Enjoy.
+            </p>
         </div>
         <div class="bodyContainer">
-        <h2 class="heading">me</h2>
-        <a class="content">
-            welcome welcome! <br>
-
-            I like abstract design hence the boxes, I like simplicity hence the black and white.<br> I'm interested in a lot of stuff Islam, building, investing (in people), absolutely demolishing my body (see me puke after a leg day), physics, math, art (i love my sister's paintings), Nusrat Fateh Ali Khan, Iqbal, sound tracks (hans zimmer), kendrick, water, podcasts, cycling. <br>
-            The year is 2024 and I am grateful to be alive. I will be growing a lot and this is a place to capture it. <br>
-            If you have anything you'd like to share with me that you think id find interesting shoot me a dm.
-
-            Enjoy.  
-        </a>
+            <h3 class="heading">Skills & Languages <br>(Click skill to see respective project)</h2>
+            <p class="content">
+<ul>
+    <li>Full stack 
+    </li>
+    <li>Raspberry Pi</li>
+    <li>Python</li>
+    <li>Java</li>
+    <li>Html/css/js</li>
+    <li>Teaching</li>
+    <li>I love the terminal</li>
+</ul>
+            </p>
+        </div>
     </div>
     <div>
         <a class="bodyImages">
-            <img src="./media/abdullah.jpg" >
+            <img src="./media/abdullah.jpg">
         </a>
-        
-        <h1> if youre here from X this is the vid youre looking for (watch at your own risk)</h1>
-        <video controls>
-            <source src="./media/marketing 101.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
     </div>
 </body>
 </html>
