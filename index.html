@@ -18,6 +18,7 @@
             color: white;
             margin: 0;
             padding: 20px;
+            cursor: url('./media/zyzz_dingboard.png'), auto; 
         }
 
         .headContainer {
@@ -83,6 +84,20 @@
             display: block;
             margin-bottom: 10px; /* Adjust the value as needed */
         }
+        .play-button {
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            background: none;
+            position: absolute;
+            bottom: 0vh;
+            right: 0vb;
+        }
+
+        .play-button img {
+            width: 100px; /* Adjust the size as needed */
+            height: auto;
+        }
     </style>
 </head>
 <body>
@@ -136,5 +151,25 @@
             <img src="./media/abdullah.jpg">
         </a>
     </div>
+    <audio id="music" src="./media/anthem.mp3"></audio>
+
+    <button class="play-button" onclick="toggleMusic()">
+        <img src="./media/anthembutton.jpeg" alt="Play Music">
+    </button>
+
+    <script>
+       function toggleMusic() {
+            var audio = document.getElementById('music');
+            var buttonImage = document.getElementById('playButtonImage');
+
+            if (audio.paused) {
+                audio.play();
+                buttonImage.src = './media/pausebutton.jpeg'; // Image for pause
+            } else {
+                audio.pause();
+                buttonImage.src = './media/anthembutton.jpeg'; // Image for play
+            }
+        }
+    </script>
 </body>
 </html>
